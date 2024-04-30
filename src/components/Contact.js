@@ -62,9 +62,14 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <AnchorLink className="text-indigo-400 leading-relaxed">
+              <div
+                className="text-indigo-400 leading-relaxed"
+                onClick={() =>
+                  (window.location = "mailto:svm.kushwaha@gmail.com")
+                }
+              >
                 svm.kushwaha@gmail.com
-              </AnchorLink>
+              </div>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>

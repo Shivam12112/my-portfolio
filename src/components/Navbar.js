@@ -23,20 +23,22 @@ export default function Navbar() {
             Testimonials
           </AnchorLink>
         </nav>
-        <AnchorLink
-          href="https://www.linkedin.com/in/shivam-kushwaha-81a5a6135/"
-          target="blank"
+        <p
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/shivam-kushwaha-81a5a6135/"
+            )
+          }
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
         >
           <FaLinkedin className="w-4 h-4 ml-1" />
-        </AnchorLink>
-        <AnchorLink
-          href="https://github.com/Shivam12112/"
-          target="blank"
+        </p>
+        <p
+          onClick={() => window.open("https://github.com/Shivam12112/")}
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
         >
           <FaGithub className="w-4 h-4 ml-1" />
-        </AnchorLink>
+        </p>
         <AnchorLink
           href="#contact"
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
