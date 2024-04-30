@@ -1,5 +1,5 @@
-import React from "react";
 import { CodeIcon } from "@heroicons/react/solid";
+import React from "react";
 import { projects } from "../data";
 
 const Projects = () => {
@@ -19,10 +19,12 @@ const Projects = () => {
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <a
-              href={project.link}
+            <div
               key={project.image}
               className="sm:w-1/2 w-100 p-4"
+              onClick={() => {
+                window.open(project.link);
+              }}
             >
               <div className="flex relative">
                 <img
@@ -40,7 +42,7 @@ const Projects = () => {
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

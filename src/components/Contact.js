@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -61,9 +62,9 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <AnchorLink className="text-indigo-400 leading-relaxed">
                 svm.kushwaha@gmail.com
-              </a>
+              </AnchorLink>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
