@@ -1,5 +1,8 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React from "react";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import resume from "../Resume.pdf";
+import moment from "moment";
 
 const About = () => {
   return (
@@ -26,6 +29,21 @@ const About = () => {
             >
               Work With Me
             </AnchorLink>
+
+            <a
+              href={resume}
+              download={`Shivam's Resume - ${moment().format("DD MMM, HH:mm")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="ml-4 inline-flex text-black bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            >
+              Resume
+              <FaCloudDownloadAlt
+                className="ml-2"
+                size={25}
+                style={{ marginTop: 2.4 }}
+              />
+            </a>
             <AnchorLink
               href="#projects"
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"

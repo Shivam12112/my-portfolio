@@ -1,5 +1,4 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -29,7 +28,9 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then((res) => {
+        alert("Message sent!");
+      })
       .catch((error) => alert(error));
   }
 
